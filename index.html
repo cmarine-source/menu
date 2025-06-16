@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Napoli - Menù</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFF9F2;
+        }
+        
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .menu-section {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-section:hover {
+            transform: translateY(-2px);
+        }
+        
+        .menu-item {
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            border-left-color: #E63946;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Titolo -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-amber-900 mb-2">La Bella Napoli</h1>
+            <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            <p class="mt-4 text-lg text-amber-800">Autentica pizza napoletana dal 1985</p>
+        </div>
+        
+        <!-- Menù -->
+        <div class="space-y-12">
+            <!-- Antipasti -->
+            <div class="menu-section bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-amber-700 px-6 py-3">
+                    <h2 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-utensils mr-3"></i> Antipasti
+                    </h2>
+                </div>
+                <div class="divide-y divide-amber-100">
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Bruschetta al Pomodoro</h3>
+                                <p class="text-gray-600 mt-1">Pane tostato con pomodori freschi, aglio, basilico e olio extravergine</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€5.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Frittura di Calamari</h3>
+                                <p class="text-gray-600 mt-1">Calamari freschi impanati e fritti, serviti con salsa al limone</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Caprese</h3>
+                                <p class="text-gray-600 mt-1">Mozzarella di bufala, pomodori freschi e basilico con olio extravergine</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€7.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pizze Classiche -->
+            <div class="menu-section bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-amber-700 px-6 py-3">
+                    <h2 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-pizza-slice mr-3"></i> Pizze Classiche
+                    </h2>
+                </div>
+                <div class="divide-y divide-amber-100">
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Margherita</h3>
+                                <p class="text-gray-600 mt-1">Pomodoro, mozzarella, basilico fresco e olio extravergine</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€7.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Marinara</h3>
+                                <p class="text-gray-600 mt-1">Pomodoro, aglio, origano e olio extravergine</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€6.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Diavola</h3>
+                                <p class="text-gray-600 mt-1">Pomodoro, mozzarella e salame piccante</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Quattro Formaggi</h3>
+                                <p class="text-gray-600 mt-1">Mozzarella, gorgonzola, fontina e parmigiano</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€9.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pizze Speciali -->
+            <div class="menu-section bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-amber-700 px-6 py-3">
+                    <h2 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-star mr-3"></i> Pizze Speciali
+                    </h2>
+                </div>
+                <div class="divide-y divide-amber-100">
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Napoli</h3>
+                                <p class="text-gray-600 mt-1">Pomodoro, mozzarella di bufala, alici fresche e capperi</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€10.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Tartufata</h3>
+                                <p class="text-gray-600 mt-1">Mozzarella di bufala, funghi porcini, prosciutto crudo e tartufo nero</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€12.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Contadina</h3>
+                                <p class="text-gray-600 mt-1">Pomodoro, mozzarella, melanzane grigliate, zucchine e peperoni</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€9.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dolci -->
+            <div class="menu-section bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-amber-700 px-6 py-3">
+                    <h2 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-ice-cream mr-3"></i> Dolci
+                    </h2>
+                </div>
+                <div class="divide-y divide-amber-100">
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Tiramisù</h3>
+                                <p class="text-gray-600 mt-1">Il classico dolce al caffè con savoiardi, mascarpone e cacao</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€5.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Cannolo Siciliano</h3>
+                                <p class="text-gray-600 mt-1">Cialda croccante ripiena di ricotta dolce e scorze d'arancia</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€4.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Panna Cotta</h3>
+                                <p class="text-gray-600 mt-1">Crema di panna cotta servita con salsa ai frutti di bosco</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€5.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bevande -->
+            <div class="menu-section bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-amber-700 px-6 py-3">
+                    <h2 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-glass-cheers mr-3"></i> Bevande
+                    </h2>
+                </div>
+                <div class="divide-y divide-amber-100">
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Acqua (0.5L)</h3>
+                                <p class="text-gray-600 mt-1">Naturale o frizzante</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€1.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Birra (0.5L)</h3>
+                                <p class="text-gray-600 mt-1">Birra artigianale italiana o internazionale</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€4.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Vino della Casa (0.75L)</h3>
+                                <p class="text-gray-600 mt-1">Rosso o bianco, selezione di vini locali</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€12.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item px-6 py-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-amber-900">Coca Cola (0.33L)</h3>
+                                <p class="text-gray-600 mt-1">Bibita gassata</p>
+                            </div>
+                            <span class="font-bold text-amber-800">€3.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nota finale -->
+        <div class="mt-12 text-center text-sm text-amber-800">
+            <p>Tutti i nostri piatti sono preparati con ingredienti freschi e di qualità</p>
+            <p class="mt-1">Forno a legna tradizionale napoletana</p>
+        </div>
+    </div>
+</body>
+</html>
